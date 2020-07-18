@@ -48,3 +48,18 @@ html {
     background-color: orangered;
 }
 
+/* panel result */
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.lose {
+    color: orangered;
+}
+
+.win {
+    color: green;
+}
