@@ -56,10 +56,50 @@ html {
     font-weight: 600;
 }
 
-.lose {
+.result .lose {
     color: orangered;
 }
 
-.win {
+.result .win {
     color: green;
 }
+
+/* buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 0 20px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.attack {
+    background-color: red;
+    color: white;
+}
+
+.special-attack {
+    background-color: orange;
+    color: black
+}
+
+.heal {
+    background-color: green;
+    color: white;
+}
+
+.give-up{
+    background-color: gray;
+    color: white;
+}
+
+.new-game {
+    background-color: blue;
+    color: white;
+}
+

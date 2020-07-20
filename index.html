@@ -35,7 +35,15 @@
                 Você Perdeu :(
             </div>
         </div>
-        <div class="panel buttons">1</div>
+        <div class="panel buttons">
+            <template v-if="running">
+                <button @click="attack(false)" class="btn attack">Atacar</button>
+                <button @click="attack(true)" class="btn special-attack">Ataque Especial</button>
+                <button @click="healAndHurt" class="btn heal">Curar</button>
+                <button @click="running = false" class="btn give-up">Desistir</button>
+            </template>
+            <button v-else @click="startGame" class="btn new-game">Iniciar Jogo</button>
+        </div>
         <div class="panel logs">1</div>
     </div>
     <script src="app.js"></script>
